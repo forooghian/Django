@@ -8,5 +8,4 @@ from .models import Adv
 
 def index(request):
     advs = Adv.objects.all()
-    output = ', '.join([a.title for a in advs])
-    return HttpResponse(output)
+    return render(request, 'advs/index.html', {'advs': advs})
