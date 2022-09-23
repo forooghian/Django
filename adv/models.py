@@ -7,6 +7,9 @@ from django.utils import timezone
 class Category(models.Model):
     name = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.name
+
 
 class Adv(models.Model):
     title = models.CharField(max_length=255)
@@ -14,3 +17,6 @@ class Adv(models.Model):
     price = models.DecimalField(max_digits=12, decimal_places=0)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     date_created = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.title
