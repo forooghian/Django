@@ -11,7 +11,9 @@
         <tbody>
             {% for adv in advs %}
             <tr>
-                <td>{{adv.title}}</td>
+                <td>
+                    <a href="{% url 'adv:detail' adv.id %}">{{ adv.title }}</a>
+                </td>
                 <td>{{adv.phone}}</td>
                 <td>{{adv.price}}</td>
             </tr>
