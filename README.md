@@ -94,7 +94,7 @@ http://127.0.0.1:8000/divar/advertisements/add_new/
 http://127.0.0.1:8000/divar/advertisements/update/
 ```
 
-5-Remove an existing advertise:(POSST)
+5-Remove an existing advertise:(POST)
 
 ```
 http://127.0.0.1:8000/divar/advertisements/remove/
