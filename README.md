@@ -51,7 +51,54 @@ python manage.py migrate
 
 **5- Running Tests**
 
+first active virtual server:
+open command line, naviage to your `backend` folder, then run
+```
+venv\Scripts\activate.bat
+```
 
+then start your server:
+```
+python manage.py runserver
+```
+
+when you see the line below, your server is ready for testing:
+```
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+```
+
+
+open postman, then test below urls:
+1-Index:(GET)
+
+```
+http://127.0.0.1:8000/divar/
+```
+
+2-Get all advertisements:(GET)
+
+```
+http://127.0.0.1:8000/divar/advertisements/
+```
+
+3-Add new advertise:(POST)
+
+```
+http://127.0.0.1:8000/divar/advertisements/add_new/
+```
+
+4-Update an existing advertise:(PUT)
+
+```
+http://127.0.0.1:8000/divar/advertisements/update/
+```
+
+5-Remove an existing advertise:(POSST)
+
+```
+http://127.0.0.1:8000/divar/advertisements/remove/
+```
 
 
 

@@ -5,24 +5,24 @@ from rest_framework.response import Response
 
 @api_view()
 def Index(request):
-    return Response('<center><h1>Welcome to Divar Api HomePage</h1></center>')
+    return Response('Welcome to Divar Api HomePage')
 
 
-@api_view(['GET', 'POST'])
+@api_view(['GET'])
 def Advertisements(request):
-    pass
+    return Response('Advertisements')
 
 
 @api_view(['POST'])
 def AddNewAdvertisement(request):
-    pass
+    return Response('AddNewAdvertisement')
 
 
 @api_view(['PUT'])
 def UpdateAdvertisement(request):
-    pass
+    return Response('UpdateAdvertisement')
 
 
 @api_view(['POST'])
 def RemoveAdvertisement(request):
-    pass
+    return Response('RemoveAdvertisement')
