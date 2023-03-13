@@ -1,6 +1,7 @@
 from urllib import request
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework import status
 
 
 @api_view()
@@ -15,7 +16,7 @@ def Advertisements(request):
 
 @api_view(['POST'])
 def AddNewAdvertisement(request):
-    return Response('AddNewAdvertisement')
+    return Response({"message": "{} is added".format(request.data['addvertisement_name'])}, status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(['PUT'])
