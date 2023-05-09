@@ -33,7 +33,7 @@ clone this repository on your system, then open the command line again and open
 repository directory, then type
 
 ```
-pip install -r requirements.txt
+pip install -r requirments.txt
 ```
 
 **4- create database**
