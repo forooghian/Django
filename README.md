@@ -68,9 +68,9 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
 
-```
-open postman, then test below urls:
-```
+
+open postman, then test below urls.
+
 1-Index:(GET)
 
 ```
