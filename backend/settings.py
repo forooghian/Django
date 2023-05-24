@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework.apps.RestFrameworkConfig",
-    "divar_app.apps.DivarAppConfig"
+    "divar_app.apps.DivarAppConfig",
+    "divar_app.apps.dashboardConfig"
 ]
 
 MIDDLEWARE = [
